@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="output"></p>
+
+    <script>
+        const ticketPrice = 600;
+        let numberOfTickets = parseInt(prompt('How many tickets you want?'));
+
+        const totalCost = ticketPrice * numberOfTickets;
+
+        let outputElement = document.getElementById("output");
+        outputElement.innerHTML = "Total cost to buy " + numberOfTickets + " tickets to a movie is " + totalCost + " PKR";
+    </script>
+</body>
+</html>
